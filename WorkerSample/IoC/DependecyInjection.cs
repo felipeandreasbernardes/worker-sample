@@ -8,6 +8,7 @@ namespace WorkerSample.IoC
         public static IServiceCollection ConfigureWorkerService(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddHostedService<Worker>();
+            services.AddHostedService<Worker1>();
 
             return services;
         }
